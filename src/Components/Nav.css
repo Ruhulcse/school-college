@@ -27,8 +27,8 @@
 	list-style: none;
 	gap: 4rem;
 	cursor: pointer;
-
 	position: relative;
+	transition: all 0.2s linear;
 }
 
 .navbar ul li:hover {

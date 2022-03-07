@@ -1,0 +1,61 @@
+.footer {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	gap: 2rem;
+
+	line-height: 1.6;
+	font-size: 1.6rem;
+	color: #fffff4;
+	background-color: #212127;
+}
+
+.footer .fFirst .logo {
+	font-weight: bold;
+	font-size: 2rem;
+	color: #0eb582;
+	padding-bottom: 2rem;
+}
+
+.footer .fFirst a {
+	display: block;
+	margin: 1.5rem 0;
+	color: #fffff4;
+}
+
+.footer .fFirst a:hover {
+	color: #0eb582;
+}
+
+.footer .fMid .title,
+.footer .fLast .title {
+	padding-bottom: 2rem;
+}
+
+.footer .fMid .details p span {
+	font-weight: 600;
+}
+
+.footer .fLast .details .post .postImg {
+	width: 66px;
+	height: 66px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.footer .fLast .details .post {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.footer .fLast .details .post .postTitle {
+	cursor: pointer;
+}
+
+.footer .fLast .details .post:hover .postTitle {
+	color: #0eb582;
+}
+
+.upperWave svg {
+	display: block;
+}
