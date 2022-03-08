@@ -1,0 +1,40 @@
+.review {
+	text-align: center;
+}
+
+.review p {
+	font-size: 1.5rem;
+	line-height: 2;
+	color: #777;
+	position: relative;
+	background: #f0fdfa;
+	border: 0.1rem solid #0eb582;
+	margin-bottom: 3rem;
+	padding: 2rem;
+}
+
+.review p::before {
+	content: '';
+	position: absolute;
+	bottom: -1.2rem;
+	left: 50%;
+	transform: translateX(-50%) rotate(45deg);
+	background: #f0fdfa;
+	border-bottom: 0.1rem solid #0eb582;
+	border-right: 0.1rem solid #0eb582;
+	height: 2rem;
+	width: 2rem;
+}
+
+.review img {
+	height: 7rem;
+	width: 7rem;
+	border-radius: 50%;
+}
+
+.review h3 {
+	font-size: 2rem;
+	text-transform: capitalize;
+	color: #444;
+	padding: 0.5rem 0;
+}
