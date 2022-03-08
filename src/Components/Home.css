@@ -1,0 +1,48 @@
+.hero {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+	gap: 2rem;
+	color: #444;
+}
+
+.hero .lHero {
+	margin: auto;
+}
+
+.hero .lHero h1 {
+	font-size: 5rem;
+}
+
+.hero .lHero p {
+	font-size: 1.5rem;
+	padding: 2rem 0;
+}
+
+.hero .lHero .btn {
+	border-radius: 3rem;
+	font-weight: bold;
+	transition: 0.2s;
+	padding: 1.5rem 5rem;
+	background: #0eb582;
+	color: #fff;
+}
+
+.hero .lHero .btn:hover {
+	transform: scale(0.98);
+}
+
+.hero .rHero {
+	width: 52rem;
+	height: auto;
+	object-fit: contain;
+}
+
+@media (max-width: 991px) {
+	.hero .lHero {
+		text-align: center;
+	}
+
+	.hero .rHero {
+		margin: 0 auto;
+	}
+}
