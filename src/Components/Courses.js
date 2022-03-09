@@ -11,6 +11,8 @@ import logo from '../asset/courses/logo.jpg';
 import ui from '../asset/courses/ui.jpg';
 import video from '../asset/courses/video.jpg';
 import web from '../asset/courses/web.jpg';
+import Course from './Course';
+import './Courses.css';
 
 function Courses(props) {
 	//All Courses data will come from server
@@ -78,10 +80,24 @@ function Courses(props) {
 	];
 	console.log(allCourse);
 	return (
-		<div>
-			<h1>ufj</h1>
-			<h1>ufj</h1>
-		</div>
+		<section className="NewCoursesSection AllCources">
+			<div className="heading">
+				<h1>All Courses</h1>
+			</div>
+			<div className="NewCourses">
+				{allCourse.map((course) => (
+					<Course
+						courseImage={course.courseImage}
+						courseTitle={course.courseTitle}
+						courseDescription={course.courseDescription}
+						CoursePrice={course.CoursePrice}
+						instractorImage={course.instractorImage}
+						instractorName={course.instractorName}
+						courseDuration={course.courseDuration}
+					/>
+				))}
+			</div>
+		</section>
 	);
 }
 

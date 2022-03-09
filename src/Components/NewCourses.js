@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import app from '../asset/courses/app.jpg';
 import james from '../asset/courses/intractor/james.jpg';
 import jonathon from '../asset/courses/intractor/jonathon.jpg';
@@ -35,7 +36,9 @@ function NewCourses(props) {
 		<section className="NewCoursesSection">
 			<div className="heading">
 				<h1>New Courses</h1>
-				<button className="btn">Explore More</button>
+				<Link to="/all-courses">
+					<button className="btn">Explore More</button>
+				</Link>
 			</div>
 			<div className="NewCourses">
 				{newCourse.map((course) => (

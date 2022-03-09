@@ -1,8 +1,8 @@
 import React from 'react';
 import hero from '../asset/hero.svg';
-import './Home.css';
+import './Hero.css';
 
-function Home(props) {
+function Hero(props) {
 	return (
 		<section className="hero">
 			<div className="lHero">
@@ -20,4 +20,4 @@ function Home(props) {
 	);
 }
 
-export default Home;
+export default Hero;
