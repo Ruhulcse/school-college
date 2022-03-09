@@ -79,7 +79,6 @@ function Courses(props) {
 		},
 	];
 
-	console.log(allCourse);
 	return (
 		<section className="NewCoursesSection AllCources">
 			<div className="heading">

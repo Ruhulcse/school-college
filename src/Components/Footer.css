@@ -36,8 +36,8 @@
 }
 
 .footer .fLast .details .post .postImg {
-	width: 66px;
-	height: 66px;
+	width: 60px;
+	height: 60px;
 	border-radius: 50%;
 	object-fit: cover;
 }
@@ -46,6 +46,7 @@
 	display: flex;
 	align-items: center;
 	gap: 1rem;
+	padding: 1rem 0;
 }
 
 .footer .fLast .details .post .postTitle {

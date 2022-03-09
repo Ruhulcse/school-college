@@ -27,8 +27,6 @@ function Teachers(props) {
 			<h1 className="sectionTitle">Our Teachers</h1>
 
 			<Swiper
-				// spaceBetween={50}
-				// slidesPerView={3}
 				grabCursor={true}
 				autoplay={{
 					delay: 1700,

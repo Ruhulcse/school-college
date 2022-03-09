@@ -9,8 +9,6 @@ function Nav() {
 		setOpenNav(!openNav);
 	};
 
-	console.log(openNav);
-
 	return (
 		<div className="navbar">
 			<NavLink to={'/'} className="logo">
@@ -18,17 +16,25 @@ function Nav() {
 			</NavLink>
 
 			<ul className={openNav ? 'active' : undefined}>
-				<div id="close-navbar" class="fas fa-times" onClick={navToggle}></div>
+				<div
+					id="close-navbar"
+					className="fas fa-times"
+					onClick={navToggle}
+				></div>
 				<li>
-					<NavLink to={'/'}>Home</NavLink>
+					<NavLink to={'/'} onClick={navToggle}>
+						Home
+					</NavLink>
 				</li>
 				<li>about us</li>
 				<li>
-					<NavLink to={'/all-courses'}>course</NavLink>
+					<NavLink to={'/all-courses'} onClick={navToggle}>
+						course
+					</NavLink>
 				</li>
 				<li>contact</li>
 			</ul>
-			<div id="menu-btn" class="fas fa-bars" onClick={navToggle}></div>
+			<div id="menu-btn" className="fas fa-bars" onClick={navToggle}></div>
 		</div>
 	);
 }
