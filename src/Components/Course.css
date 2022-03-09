@@ -1,0 +1,70 @@
+.course {
+	background: #f0fdfa;
+	transition: 0.2s;
+}
+
+.course:hover {
+	box-shadow: 4px 13px 16px 1px hsla(0, 0%, 27%, 0.7);
+}
+
+.course .courseImage {
+	height: 25rem;
+	overflow: hidden;
+	position: relative;
+}
+
+.course .courseImage img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.course .courseImage h3 {
+	font-size: 2.5rem;
+	color: #444;
+	position: absolute;
+	bottom: 2rem;
+	right: 2rem;
+	padding: 0.8rem 3.5rem;
+	background-color: #f0fdfa;
+	border: 2px solid #0eb582;
+}
+
+.course .courseContent {
+	padding: 2rem;
+	border: 0.1rem solid #0eb582;
+}
+
+.course .courseContent h3 {
+	font-size: 3rem;
+	text-transform: capitalize;
+	color: #444;
+}
+
+.course .courseContent p {
+	padding: 1rem 0;
+	font-size: 1.8rem;
+	line-height: 2;
+	color: #777;
+}
+
+.course .courseContent .courseInstractorAndTime {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 2rem;
+	padding-top: 2rem;
+	border-top: 0.1rem solid #0eb582;
+}
+
+.course .courseContent .courseInstractorAndTime .courseInstractor {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.course .courseContent .courseInstractorAndTime .courseInstractor img {
+	width: 5rem;
+	height: 5rem;
+	border-radius: 50%;
+}

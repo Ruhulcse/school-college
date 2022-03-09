@@ -16,6 +16,7 @@ import Review from './Review';
 import './StudentsReview.css';
 
 function StudentsReview(props) {
+	//in final the review data will come from DB
 	let reviews = [
 		{
 			id: 1,
