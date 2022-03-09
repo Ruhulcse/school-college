@@ -4,7 +4,7 @@
 }
 
 .course:hover {
-	box-shadow: 4px 13px 16px 1px hsla(0, 0%, 27%, 0.7);
+	box-shadow: 4px 10px 10px 1px hsla(0, 0%, 27%, 0.8);
 }
 
 .course .courseImage {

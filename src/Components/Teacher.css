@@ -1,0 +1,26 @@
+.teacher {
+	height: 40rem;
+	width: 40rem;
+	overflow: hidden;
+	border-radius: 0.8rem;
+}
+
+.teacher .teacherImage {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	position: relative;
+}
+
+.teacher .teacherImage .teacherName {
+	position: absolute;
+	bottom: 5rem;
+	left: 50%;
+	transform: translate(-50%);
+	font-size: 2.2rem;
+	background: #f0fdfa;
+	color: #444;
+	border: 1px solid #0eb582;
+	padding: 0.5rem 1.2rem;
+	border-radius: 0.6rem;
+}

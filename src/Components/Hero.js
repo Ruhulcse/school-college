@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import hero from '../asset/hero.svg';
 import './Hero.css';
 
@@ -11,7 +12,9 @@ function Hero(props) {
 					Presenting Academy, the tech school of the future. We teach you the
 					right skills to be prepared for tomorrow.
 				</p>
-				<button className="btn">Explore Courses</button>
+				<Link to="/all-courses">
+					<button className="btn">Explore Courses</button>
+				</Link>
 			</div>
 			<div className="rHero">
 				<img src={hero} alt="" />

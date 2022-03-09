@@ -78,6 +78,7 @@ function Courses(props) {
 			courseDuration: '27hr 57m',
 		},
 	];
+
 	console.log(allCourse);
 	return (
 		<section className="NewCoursesSection AllCources">
