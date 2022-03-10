@@ -32,7 +32,11 @@ function Nav() {
 						course
 					</NavLink>
 				</li>
-				<li>contact</li>
+				<li>
+					<NavLink to={'/contact'} onClick={navToggle}>
+						contact
+					</NavLink>
+				</li>
 			</ul>
 			<div id="menu-btn" className="fas fa-bars" onClick={navToggle}></div>
 		</div>

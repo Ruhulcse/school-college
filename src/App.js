@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 import Nav from './Components/Nav';
 import AllCourses from './Pages/AllCourses';
@@ -15,6 +16,7 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/all-courses" element={<AllCourses />} />
+					<Route path="/contact" element={<Contact />} />
 					<Route path="*" element={<ErrorPage />} />
 				</Routes>
 

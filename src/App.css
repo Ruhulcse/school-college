@@ -8,6 +8,16 @@
 	/* transition: all 0.2s linear; */
 }
 
+a,
+a:visited {
+	text-decoration: none;
+	color: #444;
+}
+
+a:hover {
+	color: #0eb582;
+}
+
 html {
 	font-size: 62.5%;
 	overflow-x: hidden;
