@@ -26,10 +26,14 @@ function Nav() {
 						Home
 					</NavLink>
 				</li>
-				<li>about us</li>
 				<li>
 					<NavLink to={'/all-courses'} onClick={navToggle}>
 						course
+					</NavLink>
+				</li>
+				<li>
+					<NavLink to={'/notice'} onClick={navToggle}>
+						Notice
 					</NavLink>
 				</li>
 				<li>
