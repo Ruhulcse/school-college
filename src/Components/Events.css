@@ -1,0 +1,19 @@
+.allEvents {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+	gap: 5rem;
+	place-items: center;
+}
+
+.events .heading {
+	font-size: 4rem;
+	color: #0eb582;
+	text-align: center;
+	padding-top: 5rem;
+}
+
+@media (max-width: 1350px) {
+	.allEvents {
+		gap: 6rem;
+	}
+}
