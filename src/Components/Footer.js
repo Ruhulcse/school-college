@@ -44,7 +44,7 @@ function Footer(props) {
 					</div>
 				</div>
 
-				<div className="fLast">
+				{/* <div className="fLast">
 					<div className="title">
 						<h1>Latest News</h1>
 					</div>
@@ -87,7 +87,7 @@ function Footer(props) {
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> */}
 			</section>
 		</>
 	);

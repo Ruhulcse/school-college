@@ -1,13 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import admission from '../asset/eventsImage/admission.jpg';
 import cultural from '../asset/eventsImage/cultural.jpg';
 import picnic from '../asset/eventsImage/picnic.jpg';
 import sports from '../asset/eventsImage/sports.jpg';
-import Event from './Event';
-import './Events.css';
+import './SingleEvent.css';
 
-function Events(props) {
+function SingleEvent(props) {
+	//single event data will come from api based on event id
 	const allEvents = [
 		{
 			eventid: '1',
@@ -47,24 +47,30 @@ function Events(props) {
 		},
 	];
 
+	const { eventid } = useParams();
+
 	return (
-		<div className="events">
-			<h1 className="heading">Event and News</h1>
-			<section className="allEvents">
-				{allEvents.map((event) => (
-					<Link to={`/event/${event.eventid}`} key={event.eventid}>
-						<Event
-							eventImg={event.eventImg}
-							eventDay={event.eventDay}
-							eventDate={event.eventDate}
-							eventTitle={event.eventTitle}
-							eventDescription={event.eventDescription}
-						/>
-					</Link>
+		<section className="singleEventSection">
+			{allEvents
+				.filter((event) => event.eventid === eventid)
+				.map((filtered) => (
+					<div className="singleEvent">
+						<div className="singleEventImg">
+							<img src={filtered.eventImg} alt="" />
+						</div>
+
+						<div className="singleEventInfo">
+							<div className="singleEventDate">
+								<span>{filtered.eventDay}</span>
+								<span>{filtered.eventDate}</span>
+							</div>
+							<h1 className="singleEventTitle"> {filtered.eventTitle}</h1>
+							<p className="singleEventText">{filtered.eventDescription}</p>
+						</div>
+					</div>
 				))}
-			</section>
-		</div>
+		</section>
 	);
 }
 
-export default Events;
+export default SingleEvent;

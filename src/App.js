@@ -4,6 +4,7 @@ import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 import Nav from './Components/Nav';
 import Notice from './Components/Notice';
+import SingleEvent from './Components/SingleEvent';
 import ErrorPage from './Pages/ErrorPage';
 import Home from './Pages/home';
 
@@ -18,6 +19,7 @@ function App() {
 					<Route path="/notice" element={<Notice />} />
 					{/* <Route path="/all-courses" element={<Courses />} /> */}
 					<Route path="/contact" element={<Contact />} />
+					<Route path="/event/:eventid" element={<SingleEvent />} />
 					<Route path="*" element={<ErrorPage />} />
 				</Routes>
 

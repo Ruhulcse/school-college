@@ -1,0 +1,62 @@
+.singleEventSection {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: #444;
+}
+
+.singleEventSection .singleEvent .singleEventImg {
+	height: 65rem;
+	height: 30rem;
+	min-width: 65rem;
+	max-width: 65rem;
+	min-height: 30rem;
+	max-height: 30rem;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.singleEventSection .singleEvent .singleEventImg img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.singleEventSection .singleEvent .singleEventInfo {
+	padding: 4rem 0;
+}
+
+.singleEventSection .singleEvent .singleEventInfo .singleEventDate span {
+	font-size: 1.8rem;
+	display: block;
+}
+
+.singleEventSection .singleEvent .singleEventInfo .singleEventTitle {
+	font-size: 3rem;
+	color: #0eb582;
+	padding: 2rem 0;
+}
+
+.singleEventSection .singleEvent .singleEventInfo .singleEventText {
+	font-size: 1.8rem;
+}
+
+/* Media queries */
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 768px) {
+	.singleEventSection .singleEvent .singleEventImg {
+		height: 55rem;
+		min-width: 55rem;
+		max-width: 55rem;
+		overflow: hidden;
+	}
+}
+
+@media (max-width: 450px) {
+}
