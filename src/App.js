@@ -4,7 +4,6 @@ import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 import Nav from './Components/Nav';
 import Notice from './Components/Notice';
-import AllCourses from './Pages/AllCourses';
 import ErrorPage from './Pages/ErrorPage';
 import Home from './Pages/home';
 
@@ -17,7 +16,7 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/notice" element={<Notice />} />
-					<Route path="/all-courses" element={<AllCourses />} />
+					{/* <Route path="/all-courses" element={<Courses />} /> */}
 					<Route path="/contact" element={<Contact />} />
 					<Route path="*" element={<ErrorPage />} />
 				</Routes>

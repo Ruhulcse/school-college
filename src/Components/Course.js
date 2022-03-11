@@ -14,12 +14,13 @@ function Course({
 		<div class="course">
 			<div class="courseImage">
 				<img src={courseImage} alt="" />
-				<h3>৳{CoursePrice}</h3>
 			</div>
 			<div class="courseContent">
-				<h3 className="courseTitle">{courseTitle}</h3>
-				<p>{courseDescription}</p>
-				<div className="courseInstractorAndTime">
+				<h3 className="courseTitle" style={{ textAlign: 'center' }}>
+					{courseTitle}
+				</h3>
+				{/* <p>{courseDescription}</p> 
+				 <div className="courseInstractorAndTime">
 					<div className="courseInstractor">
 						<img src={instractorImage} alt="" className="instractorImage" />
 						<h3 className="instractorName">{instractorName}</h3>
@@ -28,7 +29,7 @@ function Course({
 						<i className="fas fa-clock" style={{ paddingRight: `1rem` }}></i>
 						{courseDuration}
 					</h3>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);

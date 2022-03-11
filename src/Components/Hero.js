@@ -12,8 +12,8 @@ function Hero(props) {
 					Presenting Academy, the tech school of the future. We teach you the
 					right skills to be prepared for tomorrow.
 				</p>
-				<Link to="/all-courses">
-					<button className="btn">Explore Courses</button>
+				<Link to="/contact">
+					<button className="btn">Contact us</button>
 				</Link>
 			</div>
 			<div className="rHero">

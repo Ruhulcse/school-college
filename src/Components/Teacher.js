@@ -1,12 +1,15 @@
 import React from 'react';
 import './Teacher.css';
 
-function Teacher({ teacherImage, teacherName }) {
+function Teacher({ teacherImage, teacherName, subject }) {
 	return (
 		<div className="teacher">
 			<div className="teacherImage">
 				<img src={teacherImage} alt="" />
-				<h1 className="teacherName">{teacherName}</h1>
+				<div className="teacherName">
+					<h1>{teacherName}</h1>
+					<p>{subject}</p>
+				</div>
 			</div>
 		</div>
 	);

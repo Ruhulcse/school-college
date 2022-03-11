@@ -1,6 +1,7 @@
 .course {
 	background: #f0fdfa;
 	transition: 0.2s;
+	border: 1px solid #0eb582;
 }
 
 .course:hover {
@@ -32,7 +33,9 @@
 
 .course .courseContent {
 	padding: 2rem;
-	border: 0.1rem solid #0eb582;
+	/* border-left: 2px solid #0eb582;
+	border-right: 2px solid #0eb582;
+	border-bottom: 2px solid #0eb582; */
 }
 
 .course .courseContent h3 {
