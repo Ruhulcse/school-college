@@ -16,10 +16,17 @@
 }
 
 .navbar .logo {
+	height: 8rem;
+	width: 100%;
 	margin-right: auto;
 	font-size: 2.5rem;
 	font-weight: bold;
 	color: #0eb582;
+	display: flex;
+}
+.navbar .logo img {
+	height: 100%;
+	object-fit: cover;
 }
 
 .navbar ul {

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import testLogo from '../asset/testLogo.jpg';
 import './Nav.css';
 
 function Nav() {
@@ -12,6 +13,7 @@ function Nav() {
 	return (
 		<div className="navbar">
 			<NavLink to={'/'} className="logo">
+				<img src={testLogo} alt="" />
 				<h1>R. Academy</h1>
 			</NavLink>
 
